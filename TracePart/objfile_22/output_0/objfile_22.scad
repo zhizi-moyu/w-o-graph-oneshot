@@ -1,4 +1,4 @@
-```scad
+
 // Parameters
 hub_d = 30;
 hub_h = 20;
@@ -117,5 +117,5 @@ module coupling_assembly() {
 
 // Render the full assembly
 coupling_assembly();
-```
+
 
