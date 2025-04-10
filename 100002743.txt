@@ -1,0 +1,22 @@
+
+
+            component_list = {
+    'rounded_edge_block': {
+        'num': '1',
+        'description': 'A single solid rectangular block with a flat base and top, where the top edges are smoothly rounded. The block has a clean, uniform surface and appears to be symmetrical along all three axes. The bottom edges remain sharp, while the top four vertical edges are filleted, giving it a softened appearance. The overall shape resembles a rectangular cuboid with a softened top contour.'
+    }
+}
+            modify component list:
+            component_list = {
+    'rounded_edge_block': {
+        'num': '1',
+        'description': 'A single solid rectangular block with a flat base and top, where the top edges are smoothly rounded. The block has a clean, uniform surface and appears to be symmetrical along all three axes. The bottom edges remain sharp, while the top four vertical edges are filleted, giving it a softened appearance. The overall shape resembles a rectangular cuboid with a softened top contour.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['rounded_edge_block'],
+        'description': 'The single component "rounded_edge_block" is positioned as the base and only layer of the model. It sits flat on its sharp-edged bottom, with the rounded edges forming the top contour. No other components are present above or below it.'
+    }
+}
+        
