@@ -1,4 +1,4 @@
-```scad
+
 $fn = 100;
 
 // Parameters
@@ -106,5 +106,5 @@ module assembly() {
 
 // Render the full assembly
 assembly();
-```
+
 
