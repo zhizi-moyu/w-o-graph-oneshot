@@ -1,0 +1,62 @@
+
+
+            component_list = {
+    'left_hub': {
+        'num': '1',
+        'description': 'A cylindrical component with a central bore and three evenly spaced jaw-like protrusions extending radially from the face. It has bolt holes around the flange for fastening.'
+    },
+    'right_hub': {
+        'num': '1',
+        'description': 'A mirrored cylindrical component similar to the left hub, with a central bore and three jaw-like protrusions that interlock with the left hub. Also includes bolt holes around the flange.'
+    },
+    'elastomer_spider': {
+        'num': '1',
+        'description': 'A flexible, star-shaped element with six arms that fit snugly between the jaws of the left and right hubs. It acts as a cushion to absorb shock and misalignment.'
+    },
+    'bolt': {
+        'num': '3',
+        'description': 'Slender cylindrical fasteners with hexagonal heads, used to secure the two hubs together through the flange holes.'
+    },
+    'nut': {
+        'num': '3',
+        'description': 'Hexagonal cylindrical components that thread onto the bolts to clamp the hubs together.'
+    }
+}
+            modify component list:
+            component_list = {
+    'left_hub': {
+        'num': '1',
+        'description': 'A cylindrical component with a central bore and three evenly spaced jaw-like protrusions extending radially from the face. It has bolt holes around the flange for fastening.'
+    },
+    'right_hub': {
+        'num': '1',
+        'description': 'A mirrored cylindrical component similar to the left hub, with a central bore and three jaw-like protrusions that interlock with the left hub. Also includes bolt holes around the flange.'
+    },
+    'elastomer_spider': {
+        'num': '1',
+        'description': 'A flexible, star-shaped element with six arms that fit snugly between the jaws of the left and right hubs. It acts as a cushion to absorb shock and misalignment.'
+    },
+    'bolt': {
+        'num': '3',
+        'description': 'Slender cylindrical fasteners with hexagonal heads, used to secure the two hubs together through the flange holes.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['left_hub'],
+        'description': 'The left hub is positioned at the top of the assembly. It has jaw-like protrusions that interlock with the right hub and bolt holes for fastening.'
+    },
+    'layer_2': {
+        'involved_components': ['elastomer_spider'],
+        'description': 'The elastomer spider is sandwiched between the left and right hubs. It fits between the jaws of both hubs, providing cushioning and flexibility.'
+    },
+    'layer_3': {
+        'involved_components': ['right_hub'],
+        'description': 'The right hub is positioned at the bottom of the assembly. It mirrors the left hub and interlocks with it via the elastomer spider.'
+    },
+    'layer_4': {
+        'involved_components': ['bolt'],
+        'description': 'The bolts span through the flanges of both the left and right hubs, securing them together. The bolt heads are visible on the outer face of the left hub.'
+    }
+}
+        
