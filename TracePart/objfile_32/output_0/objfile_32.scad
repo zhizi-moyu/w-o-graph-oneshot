@@ -1,4 +1,4 @@
-```scad
+
 $fn=100;
 
 // Parameters
@@ -84,5 +84,5 @@ module coupling() {
 
 // Render the full coupling
 coupling();
-```
+
 
