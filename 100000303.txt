@@ -1,0 +1,50 @@
+
+
+            component_list = {
+    'base_frame': {
+        'num': '1',
+        'description': 'A flat rectangular frame with a large central cutout and two side extensions. The frame has mounting slots and structural ribs along the edges for reinforcement.'
+    },
+    'sloped_support_bracket': {
+        'num': '2',
+        'description': 'Triangular sloped brackets mounted on each side of the base frame. Each bracket has a slanted top surface and a vertical side wall, forming a right triangle profile. They provide angled support to the structure.'
+    },
+    'vertical_support_rib': {
+        'num': '1',
+        'description': 'A vertical rib located centrally between the two sloped brackets. It connects the top of the sloped brackets and provides vertical reinforcement. It has a rectangular profile with a central slot or hole.'
+    },
+    'side_reinforcement_plate': {
+        'num': '2',
+        'description': 'Flat plates attached to the outer sides of the sloped brackets. Each plate has a triangular shape and is used to reinforce the sloped brackets laterally.'
+    }
+}
+            modify component list:
+            component_list = {
+    'base_frame': {
+        'num': '1',
+        'description': 'A flat rectangular frame with a large central cutout and two side extensions. The frame has mounting slots and structural ribs along the edges for reinforcement.'
+    },
+    'sloped_support_bracket': {
+        'num': '2',
+        'description': 'Triangular sloped brackets mounted on each side of the base frame. Each bracket has a slanted top surface and a vertical side wall, forming a right triangle profile. They provide angled support to the structure.'
+    },
+    'vertical_support_rib': {
+        'num': '1',
+        'description': 'A vertical rib located centrally between the two sloped brackets. It connects the top of the sloped brackets and provides vertical reinforcement. It has a rectangular profile with a central slot or hole.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['base_frame'],
+        'description': 'The base_frame lies at the bottom of the structure, serving as the foundation. It supports the sloped_support_brackets mounted on its sides.'
+    },
+    'layer_2': {
+        'involved_components': ['sloped_support_bracket'],
+        'description': 'Two sloped_support_brackets are mounted on either side of the base_frame. They rise diagonally and provide angled support for the vertical_support_rib above.'
+    },
+    'layer_3': {
+        'involved_components': ['vertical_support_rib'],
+        'description': 'The vertical_support_rib is positioned centrally and vertically between the two sloped_support_brackets, connecting their top ends and providing vertical reinforcement.'
+    }
+}
+        
