@@ -1,0 +1,22 @@
+
+
+            component_list = {
+    'key_insert': {
+        'num': '1',
+        'description': 'A small, flat, asymmetrical mechanical key with a polygonal profile. One end is rounded with a small circular protrusion, while the opposite end tapers to a sharp angled point. The body is flat and thin with a consistent thickness, and the top surface is slightly beveled. The shape suggests it is used for fitting into a matching slot to transmit torque or ensure alignment between rotating parts.'
+    }
+}
+            modify component list:
+            component_list = {
+    'key_insert': {
+        'num': '1',
+        'description': 'A small, flat, asymmetrical mechanical key with a polygonal profile. One end is rounded with a small circular protrusion, while the opposite end tapers to a sharp angled point. The body is flat and thin with a consistent thickness, and the top surface is slightly beveled. The shape suggests it is used for fitting into a matching slot to transmit torque or ensure alignment between rotating parts.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['key_insert'],
+        'description': 'The key_insert is a standalone component positioned in a single layer. It is flat and thin, with no other components above or below it in the assembly.'
+    }
+}
+        
