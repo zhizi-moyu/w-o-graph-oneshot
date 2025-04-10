@@ -1,0 +1,22 @@
+
+
+            component_list = {
+    'square_plate': {
+        'num': '6',
+        'description': 'A flat square plate with slightly rounded corners and a small circular hole at the center. The plate has a uniform thickness and a smooth surface. The central hole appears to be for fastening or alignment purposes. The edges are slightly beveled, and the plate is symmetrical along both axes.'
+    }
+}
+            modify component list:
+            component_list = {
+    'square_plate': {
+        'num': '1',
+        'description': 'A flat square plate with slightly rounded corners and a small circular hole at the center. The plate has a uniform thickness and a smooth surface. The central hole appears to be for fastening or alignment purposes. The edges are slightly beveled, and the plate is symmetrical along both axes.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['square_plate'],
+        'description': 'The square_plate is the only component and lies flat in a horizontal orientation. It is centrally positioned with no other components above or below it.'
+    }
+}
+        
