@@ -1,0 +1,22 @@
+
+
+            component_list = {
+    'loop_frame': {
+        'num': '1',
+        'description': 'A single-piece U-shaped frame with a flat rectangular base and a rounded top. The cross-section is rectangular, and the frame is hollow in the center. The vertical sides are straight and parallel, while the top is smoothly curved. The component appears to be made of a uniform material and has a consistent thickness throughout. It is likely used as a structural or mounting bracket.'
+    }
+}
+            modify component list:
+            component_list = {
+    'loop_frame': {
+        'num': '1',
+        'description': 'A single-piece U-shaped frame with a flat rectangular base and a rounded top. The cross-section is rectangular, and the frame is hollow in the center. The vertical sides are straight and parallel, while the top is smoothly curved. The component appears to be made of a uniform material and has a consistent thickness throughout. It is likely used as a structural or mounting bracket.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['loop_frame'],
+        'description': 'The loop_frame is the only component in the model. It is vertically oriented with its flat rectangular base at the bottom and the rounded top at the top, forming a U-shape. It serves as a structural or mounting bracket.'
+    }
+}
+        
