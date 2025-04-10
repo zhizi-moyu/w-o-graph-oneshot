@@ -1,0 +1,62 @@
+
+
+            component_list = {
+    'input_shaft': {
+        'num': '1',
+        'description': 'A solid cylindrical shaft with a central bore and two threaded holes on the side for bolt insertion. One end is flat, and the other interfaces with the flange.'
+    },
+    'output_shaft': {
+        'num': '1',
+        'description': 'A solid cylindrical shaft similar to the input shaft, with a central bore and two threaded holes on the side. It interfaces with the opposite flange.'
+    },
+    'spacer_ring': {
+        'num': '2',
+        'description': 'A very flat, thin ring with a large central hole. It is sandwiched between two flange plates to provide spacing and flexibility.'
+    },
+    'flange_plate': {
+        'num': '4',
+        'description': 'A flat, thick ring-like disc with a central hole and multiple bolt holes around the perimeter. Used to connect the shafts via bolts and nuts.'
+    },
+    'bolt': {
+        'num': '8',
+        'description': 'A slender cylindrical fastener with a hexagonal socket head, used to connect flange plates through the bolt holes.'
+    },
+    'nut': {
+        'num': '8',
+        'description': 'A small hexagonal prism with a threaded hole, used in conjunction with bolts to secure the flange plates together.'
+    }
+}
+            modify component list:
+            component_list = {
+    'input_shaft': {
+        'num': '1',
+        'description': 'A solid cylindrical shaft with a central bore and two threaded holes on the side for bolt insertion. One end is flat, and the other interfaces with the flange.'
+    },
+    'output_shaft': {
+        'num': '0',
+        'description': 'A solid cylindrical shaft similar to the input shaft, with a central bore and two threaded holes on the side. It interfaces with the opposite flange.'
+    },
+    'spacer_ring': {
+        'num': '2',
+        'description': 'A very flat, thin ring with a large central hole. It is sandwiched between two flange plates to provide spacing and flexibility.'
+    },
+    'flange_plate': {
+        'num': '4',
+        'description': 'A flat, thick ring-like disc with a central hole and multiple bolt holes around the perimeter. Used to connect the shafts via bolts and nuts.'
+    },
+    'bolt': {
+        'num': '8',
+        'description': 'A slender cylindrical fastener with a hexagonal socket head, used to connect flange plates through the bolt holes.'
+    },
+    'nut': {
+        'num': '8',
+        'description': 'A small hexagonal prism with a threaded hole, used in conjunction with bolts to secure the flange plates together.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['input_shaft'],
+        'description': 'The input_shaft is a cylindrical component with a central bore and two threaded holes on the side. It is positioned as a standalone component in this layer, awaiting connection to other components such as flange plates or output shafts.'
+    }
+}
+        

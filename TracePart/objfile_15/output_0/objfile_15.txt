@@ -1,0 +1,66 @@
+
+
+            component_list = {
+    'left_hub': {
+        'num': '1',
+        'description': 'A cylindrical component with a central bore and three outward-facing curved jaw arms spaced 120 degrees apart. The outer face has bolt holes for fastening.'
+    },
+    'right_hub': {
+        'num': '1',
+        'description': 'A mirror of the left hub, also cylindrical with a central bore and three curved jaw arms that interlock with those of the left hub. It also has bolt holes on the outer face.'
+    },
+    'elastomer_insert': {
+        'num': '1',
+        'description': 'A flexible, star-shaped insert (spider) with six arms that fit snugly between the curved jaws of the two hubs, providing cushioning and torque transmission.'
+    },
+    'bolt': {
+        'num': '3',
+        'description': 'Slender cylindrical fasteners with hexagonal heads, used to secure the two hubs together through the bolt holes.'
+    },
+    'nut': {
+        'num': '3',
+        'description': 'Hexagonal cylindrical components that thread onto the bolts to clamp the hubs together.'
+    }
+}
+            modify component list:
+            component_list = {
+    'left_hub': {
+        'num': '1',
+        'description': 'A cylindrical component with a central bore and three outward-facing curved jaw arms spaced 120 degrees apart. The outer face has bolt holes for fastening.'
+    },
+    'right_hub': {
+        'num': '1',
+        'description': 'A mirror of the left hub, also cylindrical with a central bore and three curved jaw arms that interlock with those of the left hub. It also has bolt holes on the outer face.'
+    },
+    'elastomer_insert': {
+        'num': '1',
+        'description': 'A flexible, star-shaped insert (spider) with six arms that fit snugly between the curved jaws of the two hubs, providing cushioning and torque transmission.'
+    },
+    'bolt': {
+        'num': '6',
+        'description': 'Slender cylindrical fasteners with hexagonal heads, used to secure the two hubs together through the bolt holes.'
+    },
+    'nut': {
+        'num': '6',
+        'description': 'Hexagonal cylindrical components that thread onto the bolts to clamp the hubs together.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['left_hub'],
+        'description': 'The left hub is positioned at the top of the assembly. It has outward-facing curved jaws that interlock with the right hub and bolt holes on its outer face.'
+    },
+    'layer_2': {
+        'involved_components': ['elastomer_insert'],
+        'description': 'The elastomer insert is located between the left and right hubs. It fits snugly between the curved jaws of both hubs, providing cushioning and torque transmission.'
+    },
+    'layer_3': {
+        'involved_components': ['right_hub'],
+        'description': 'The right hub is positioned below the elastomer insert and interlocks with the left hub through the curved jaws. It also has bolt holes aligned with those of the left hub.'
+    },
+    'layer_4': {
+        'involved_components': ['bolt', 'nut'],
+        'description': 'Bolts pass through the aligned bolt holes of the left and right hubs, and nuts are threaded onto the bolts to clamp the hubs together securely.'
+    }
+}
+        

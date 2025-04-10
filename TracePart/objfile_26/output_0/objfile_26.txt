@@ -1,0 +1,22 @@
+
+
+            component_list = {
+    'shaft_component': {
+        'num': '1',
+        'description': 'A single cylindrical shaft with multiple stepped diameters. The central section is slightly wider and smoothly transitions into narrower cylindrical ends. Each end has a set of symmetric grooves or slots, possibly for keying or locking mechanisms. The shaft also features small circular holes near both ends, likely for securing pins or fasteners. The overall geometry is rotationally symmetric and designed for torque transmission or alignment in a mechanical assembly.'
+    }
+}
+            modify component list:
+            component_list = {
+    'shaft_component': {
+        'num': '1',
+        'description': 'A single cylindrical shaft with multiple stepped diameters. The central section is slightly wider and smoothly transitions into narrower cylindrical ends. Each end has a set of symmetric grooves or slots, possibly for keying or locking mechanisms. The shaft also features small circular holes near both ends, likely for securing pins or fasteners. The overall geometry is rotationally symmetric and designed for torque transmission or alignment in a mechanical assembly.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['shaft_component'],
+        'description': 'The shaft_component is a single, continuous cylindrical part with symmetric features on both ends. It spans the entire vertical extent of the model and does not interact with any other components.'
+    }
+}
+        

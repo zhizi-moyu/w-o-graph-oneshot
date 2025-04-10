@@ -1,0 +1,42 @@
+
+
+            component_list = {
+    'left_coupling_half': {
+        'num': '1',
+        'description': 'A cylindrical component with a central bore for shaft insertion, featuring a slit along its length for clamping flexibility. It has a threaded hole for a clamping screw and a curved slot cut into the face to allow torsional flexibility.'
+    },
+    'right_coupling_half': {
+        'num': '1',
+        'description': 'A mirror-symmetric cylindrical component to the left half, also with a central bore, a longitudinal slit, and a curved slot. It includes a threaded hole for a clamping screw and mates with the left half to form a complete coupling.'
+    },
+    'clamping_screw': {
+        'num': '2',
+        'description': 'Hex socket head cap screws inserted into the threaded holes of each coupling half. These screws are used to tighten the slitted ends of the coupling halves onto the shafts, ensuring a secure grip.'
+    }
+}
+            modify component list:
+            component_list = {
+    'left_coupling_half': {
+        'num': '1',
+        'description': 'A cylindrical component with a central bore for shaft insertion, featuring a slit along its length for clamping flexibility. It has a threaded hole for a clamping screw and a curved slot cut into the face to allow torsional flexibility.'
+    },
+    'right_coupling_half': {
+        'num': '1',
+        'description': 'A mirror-symmetric cylindrical component to the left half, also with a central bore, a longitudinal slit, and a curved slot. It includes a threaded hole for a clamping screw and mates with the left half to form a complete coupling.'
+    },
+    'clamping_screw': {
+        'num': '2',
+        'description': 'Hex socket head cap screws inserted into the threaded holes of each coupling half. These screws are used to tighten the slitted ends of the coupling halves onto the shafts, ensuring a secure grip.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['left_coupling_half', 'clamping_screw'],
+        'description': 'The left_coupling_half is positioned on the left side of the coupling assembly and contains one clamping_screw inserted into its threaded hole to secure a shaft.'
+    },
+    'layer_2': {
+        'involved_components': ['right_coupling_half', 'clamping_screw'],
+        'description': 'The right_coupling_half is positioned on the right side of the coupling assembly and contains the second clamping_screw inserted into its threaded hole to secure a shaft. It mates with the left_coupling_half to form a complete cylindrical coupling.'
+    }
+}
+        

@@ -1,0 +1,110 @@
+
+
+            component_list = {
+    'input_shaft_hub': {
+        'num': '1',
+        'description': 'A short, thick cylindrical hub with a central bore and a flat face. It has bolt holes around the perimeter for flange connection.'
+    },
+    'output_shaft_hub': {
+        'num': '1',
+        'description': 'A similar cylindrical hub as the input hub, located on the opposite side. It also has a central bore and bolt holes for flange mounting.'
+    },
+    'central_connector_shaft': {
+        'num': '1',
+        'description': 'A slender cylindrical shaft that connects the input and output hubs. It is fixed between the two sets of flange plates and transmits torque.'
+    },
+    'flange_plate': {
+        'num': '4',
+        'description': 'Flat, circular plates with a central hole and multiple bolt holes around the edge. Two are mounted on each side of the central shaft to connect the hubs.'
+    },
+    'spacer_ring': {
+        'num': '2',
+        'description': 'Very flat, thin rings placed between the flange plates to provide spacing and alignment. They are circular with a central hole.'
+    },
+    'bolt': {
+        'num': '8',
+        'description': 'Slender cylindrical fasteners with a hexagonal head, used to secure the flange plates together. Four bolts are used on each side.'
+    },
+    'nut': {
+        'num': '8',
+        'description': 'Small hexagonal cylinders that pair with the bolts to fasten the flange plates. Positioned opposite the bolt heads.'
+    }
+}
+            modify component list:
+            component_list = {
+    'input_shaft_hub': {
+        'num': '1',
+        'description': 'A short, thick cylindrical hub with a central bore and a flat face. It has bolt holes around the perimeter for flange connection.'
+    },
+    'output_shaft_hub': {
+        'num': '1',
+        'description': 'A similar cylindrical hub as the input hub, located on the opposite side. It also has a central bore and bolt holes for flange mounting.'
+    },
+    'central_connector_shaft': {
+        'num': '1',
+        'description': 'A slender cylindrical shaft that connects the input and output hubs. It is fixed between the two sets of flange plates and transmits torque.'
+    },
+    'flange_plate': {
+        'num': '4',
+        'description': 'Flat, circular plates with a central hole and multiple bolt holes around the edge. Two are mounted on each side of the central shaft to connect the hubs.'
+    },
+    'spacer_ring': {
+        'num': '2',
+        'description': 'Very flat, thin rings placed between the flange plates to provide spacing and alignment. They are circular with a central hole.'
+    },
+    'bolt': {
+        'num': '12',
+        'description': 'Slender cylindrical fasteners with a hexagonal head, used to secure the flange plates together. Six bolts are used on each side.'
+    },
+    'nut': {
+        'num': '12',
+        'description': 'Small hexagonal cylinders that pair with the bolts to fasten the flange plates. Positioned opposite the bolt heads.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['input_shaft_hub'],
+        'description': 'The input_shaft_hub is located at the leftmost end of the assembly. It is a thick cylindrical hub with bolt holes for flange connection.'
+    },
+    'layer_2': {
+        'involved_components': ['flange_plate'],
+        'description': 'A flange_plate is mounted directly to the input_shaft_hub using bolts. It interfaces with the spacer ring and another flange plate.'
+    },
+    'layer_3': {
+        'involved_components': ['spacer_ring'],
+        'description': 'A spacer_ring is sandwiched between two flange_plates to provide spacing and alignment.'
+    },
+    'layer_4': {
+        'involved_components': ['flange_plate'],
+        'description': 'Another flange_plate is placed after the spacer_ring, completing the flange pair on the input side.'
+    },
+    'layer_5': {
+        'involved_components': ['bolt', 'nut'],
+        'description': 'Bolts and nuts fasten the two flange_plates together, passing through the spacer_ring. Six bolts and nuts are used per side.'
+    },
+    'layer_6': {
+        'involved_components': ['central_connector_shaft'],
+        'description': 'The central_connector_shaft connects the input and output assemblies. It passes through the center of the flange assemblies and transmits torque.'
+    },
+    'layer_7': {
+        'involved_components': ['flange_plate'],
+        'description': 'A flange_plate is mounted on the output side of the central shaft, mirroring the input side.'
+    },
+    'layer_8': {
+        'involved_components': ['spacer_ring'],
+        'description': 'A spacer_ring is placed between the two flange_plates on the output side.'
+    },
+    'layer_9': {
+        'involved_components': ['flange_plate'],
+        'description': 'Another flange_plate completes the flange pair on the output side.'
+    },
+    'layer_10': {
+        'involved_components': ['bolt', 'nut'],
+        'description': 'Bolts and nuts fasten the output-side flange_plates together, similar to the input side.'
+    },
+    'layer_11': {
+        'involved_components': ['output_shaft_hub'],
+        'description': 'The output_shaft_hub is located at the rightmost end of the assembly, mirroring the input_shaft_hub.'
+    }
+}
+        

@@ -1,0 +1,66 @@
+
+
+            component_list = {
+    'input_hub': {
+        'num': '1',
+        'description': 'A short cylindrical hub with a central bore and two curved slots on the face. It has a side hole for a set screw and interlocking fingers that engage with the jaw element.'
+    },
+    'output_hub': {
+        'num': '1',
+        'description': 'A similar short cylindrical hub as the input hub, with a central bore, curved slots, and a side hole for a set screw. It also has interlocking fingers that mesh with the jaw element.'
+    },
+    'jaw_element': {
+        'num': '1',
+        'description': 'A central flexible insert with multiple curved fingers extending outward in a star-like pattern. These fingers interlock with the fingers of the input and output hubs to transmit torque while allowing slight misalignment.'
+    },
+    'pin': {
+        'num': '2',
+        'description': 'Two cylindrical rods that pass through the aligned slots of the input and output hubs, providing structural support and alignment.'
+    },
+    'set_screw': {
+        'num': '2',
+        'description': 'Small cylindrical screws inserted into the side holes of the hubs to secure them onto a shaft. They are hexagonal socket head screws.'
+    }
+}
+            modify component list:
+            component_list = {
+    'input_hub': {
+        'num': '1',
+        'description': 'A short cylindrical hub with a central bore and two curved slots on the face. It has a side hole for a set screw and interlocking fingers that engage with the jaw element.'
+    },
+    'output_hub': {
+        'num': '1',
+        'description': 'A similar short cylindrical hub as the input hub, with a central bore, curved slots, and a side hole for a set screw. It also has interlocking fingers that mesh with the jaw element.'
+    },
+    'jaw_element': {
+        'num': '1',
+        'description': 'A central flexible insert with multiple curved fingers extending outward in a star-like pattern. These fingers interlock with the fingers of the input and output hubs to transmit torque while allowing slight misalignment.'
+    },
+    'pin': {
+        'num': '2',
+        'description': 'Two cylindrical rods that pass through the aligned slots of the input and output hubs, providing structural support and alignment.'
+    },
+    'set_screw': {
+        'num': '2',
+        'description': 'Small cylindrical screws inserted into the side holes of the hubs to secure them onto a shaft. They are hexagonal socket head screws.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['input_hub'],
+        'description': 'The input hub is positioned at the top of the assembly. It is a cylindrical component with a side hole for a set screw and curved slots for pin insertion. Its interlocking fingers engage with the jaw_element below.'
+    },
+    'layer_2': {
+        'involved_components': ['jaw_element'],
+        'description': 'The jaw_element is located between the input and output hubs. It has flexible curved fingers that interlock with the fingers of both hubs, allowing torque transmission and slight misalignment.'
+    },
+    'layer_3': {
+        'involved_components': ['output_hub'],
+        'description': 'The output hub is at the bottom of the assembly. It mirrors the input hub in structure, with a side hole for a set screw and curved slots for pin insertion. It interlocks with the jaw_element above.'
+    },
+    'layer_4': {
+        'involved_components': ['pin', 'set_screw'],
+        'description': 'Two pins pass horizontally through the aligned curved slots of the input and output hubs, providing structural alignment. Two set screws are inserted into the side holes of the hubs to secure them onto shafts. These components are embedded within the hubs and span across layers 1 and 3.'
+    }
+}
+        

@@ -1,0 +1,50 @@
+
+
+            component_list = {
+    'outer_sleeve': {
+        'num': '2',
+        'description': 'A thick, hollow cylindrical sleeve with a smooth outer surface and internal gear teeth on one end. It encases the inner hub and allows for rotational flexibility.'
+    },
+    'inner_hub': {
+        'num': '2',
+        'description': 'A short cylindrical component with external gear teeth that mesh with the internal teeth of the outer sleeve. It has a central bore for shaft mounting.'
+    },
+    'end_cap': {
+        'num': '2',
+        'description': 'A flat circular disc with a central hole and bolt holes around the perimeter. It is mounted on the end of the outer sleeve to secure the inner hub.'
+    },
+    'bolt': {
+        'num': '2',
+        'description': 'A short cylindrical bolt with a hexagonal head, used to fasten the end cap to the outer sleeve and secure the assembly.'
+    }
+}
+            modify component list:
+            component_list = {
+    'outer_sleeve': {
+        'num': '1',
+        'description': 'A thick, hollow cylindrical sleeve with a smooth outer surface and internal gear teeth on one end. It encases the inner hub and allows for rotational flexibility.'
+    },
+    'inner_hub': {
+        'num': '1',
+        'description': 'A short cylindrical component with external gear teeth that mesh with the internal teeth of the outer sleeve. It has a central bore for shaft mounting.'
+    },
+    'end_cap': {
+        'num': '2',
+        'description': 'A flat circular disc with a central hole and bolt holes around the perimeter. It is mounted on the end of the outer sleeve to secure the inner hub.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['end_cap'],
+        'description': 'The top end_cap is mounted on the upper end of the outer_sleeve, covering and securing the inner_hub from the top.'
+    },
+    'layer_2': {
+        'involved_components': ['outer_sleeve', 'inner_hub'],
+        'description': 'The outer_sleeve encases the inner_hub. The internal gear teeth of the outer_sleeve mesh with the external gear teeth of the inner_hub, allowing rotational flexibility.'
+    },
+    'layer_3': {
+        'involved_components': ['end_cap'],
+        'description': 'The bottom end_cap is mounted on the lower end of the outer_sleeve, securing the inner_hub from the bottom.'
+    }
+}
+        

@@ -1,0 +1,54 @@
+
+
+            component_list = {
+    'left_end_clamp': {
+        'num': '1',
+        'description': 'A short cylindrical block with a central bore and two threaded holes for clamp screws. It has a slit cut from the outer edge to the bore for clamping action.'
+    },
+    'right_end_clamp': {
+        'num': '1',
+        'description': 'A mirrored counterpart of the left end clamp, also cylindrical with a central bore, two threaded holes, and a slit for clamping.'
+    },
+    'helical_flexible_body': {
+        'num': '1',
+        'description': 'A single cylindrical body with a continuous helical cut along its length, allowing torsional flexibility. The helical slots are evenly spaced and cut through the body, forming a spring-like structure.'
+    },
+    'clamp_screw': {
+        'num': '4',
+        'description': 'Small cylindrical screws with hexagonal sockets, used to tighten the slits in the end clamps. Two are inserted into each end clamp.'
+    }
+}
+            modify component list:
+            component_list = {
+    'left_end_clamp': {
+        'num': '1',
+        'description': 'A short cylindrical block with a central bore and two threaded holes for clamp screws. It has a slit cut from the outer edge to the bore for clamping action.'
+    },
+    'right_end_clamp': {
+        'num': '1',
+        'description': 'A mirrored counterpart of the left end clamp, also cylindrical with a central bore, two threaded holes, and a slit for clamping.'
+    },
+    'helical_flexible_body': {
+        'num': '1',
+        'description': 'A single cylindrical body with a continuous helical cut along its length, allowing torsional flexibility. The helical slots are evenly spaced and cut through the body, forming a spring-like structure.'
+    },
+    'clamp_screw': {
+        'num': '4',
+        'description': 'Small cylindrical screws with hexagonal sockets, used to tighten the slits in the end clamps. Two are inserted into each end clamp.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['left_end_clamp', 'clamp_screw'],
+        'description': 'The left_end_clamp is positioned at the top end of the assembly. Two clamp_screws are inserted into the threaded holes of the clamp to secure it around a shaft.'
+    },
+    'layer_2': {
+        'involved_components': ['helical_flexible_body'],
+        'description': 'The helical_flexible_body is centrally located between the two end clamps. It connects the left and right clamps and provides torsional flexibility through its helical cuts.'
+    },
+    'layer_3': {
+        'involved_components': ['right_end_clamp', 'clamp_screw'],
+        'description': 'The right_end_clamp is positioned at the bottom end of the assembly, mirroring the left_end_clamp. Two clamp_screws are also inserted here to secure the clamp.'
+    }
+}
+        

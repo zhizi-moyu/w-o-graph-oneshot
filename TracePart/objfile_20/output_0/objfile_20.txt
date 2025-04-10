@@ -1,0 +1,86 @@
+
+
+            component_list = {
+    'central_shaft': {
+        'num': '1',
+        'description': 'A long, solid cylindrical shaft with uniform diameter, connecting the input and output hubs. It serves as the main axis of the coupling.'
+    },
+    'input_hub': {
+        'num': '1',
+        'description': 'A short, thick cylindrical component mounted on one end of the central shaft. It has a central bore and is flanged outward to connect with the flange plate.'
+    },
+    'output_hub': {
+        'num': '1',
+        'description': 'A mirror of the input hub, mounted on the opposite end of the central shaft. It also has a central bore and a flanged end for connection.'
+    },
+    'spacer_ring': {
+        'num': '2',
+        'description': 'Very thin, flat rings placed between the flange plates. They act as spacers to maintain a gap between the flanges.'
+    },
+    'flange_plate': {
+        'num': '4',
+        'description': 'Flat, circular plates with bolt holes. Two are mounted on each hub, and they are bolted together to form a rigid connection.'
+    },
+    'bolt': {
+        'num': '8',
+        'description': 'Slender cylindrical fasteners with hex heads, used to connect the flange plates. Four bolts are used on each side.'
+    },
+    'nut': {
+        'num': '8',
+        'description': 'Hexagonal nuts paired with the bolts to secure the flange plates together. Positioned opposite the bolt heads.'
+    }
+}
+            modify component list:
+            component_list = {
+    'central_shaft': {
+        'num': '1',
+        'description': 'A long, solid cylindrical shaft with uniform diameter, connecting the input and output hubs. It serves as the main axis of the coupling.'
+    },
+    'input_hub': {
+        'num': '1',
+        'description': 'A short, thick cylindrical component mounted on one end of the central shaft. It has a central bore and is flanged outward to connect with the flange plate.'
+    },
+    'output_hub': {
+        'num': '1',
+        'description': 'A mirror of the input hub, mounted on the opposite end of the central shaft. It also has a central bore and a flanged end for connection.'
+    },
+    'spacer_ring': {
+        'num': '1',
+        'description': 'A very thin, flat ring placed between the flange plates. It acts as a spacer to maintain a gap between the flanges.'
+    },
+    'flange_plate': {
+        'num': '2',
+        'description': 'Flat, circular plates with bolt holes. One is mounted on each hub, and they are bolted together to form a rigid connection.'
+    },
+    'bolt': {
+        'num': '8',
+        'description': 'Slender cylindrical fasteners with hex heads, used to connect the flange plates. Four bolts are used on each side.'
+    },
+    'nut': {
+        'num': '8',
+        'description': 'Hexagonal nuts paired with the bolts to secure the flange plates together. Positioned opposite the bolt heads.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['bolt', 'nut'],
+        'description': 'Bolts and nuts are positioned at the outermost ends of the assembly, securing the flange plates together. Each bolt passes through both flange plates and is fastened with a nut on the opposite side.'
+    },
+    'layer_2': {
+        'involved_components': ['flange_plate'],
+        'description': 'Two flange plates are mounted on the outer faces of the input and output hubs. They are aligned and bolted together to form a rigid connection.'
+    },
+    'layer_3': {
+        'involved_components': ['spacer_ring'],
+        'description': 'The spacer ring is sandwiched between the two flange plates, maintaining a small gap between them to ensure proper spacing and alignment.'
+    },
+    'layer_4': {
+        'involved_components': ['input_hub', 'output_hub'],
+        'description': 'The input and output hubs are mounted on opposite ends of the central shaft. Each hub is connected to a flange plate and has a central bore for shaft mounting.'
+    },
+    'layer_5': {
+        'involved_components': ['central_shaft'],
+        'description': 'The central shaft runs through the entire assembly, connecting the input and output hubs. It serves as the main axis and structural core of the coupling.'
+    }
+}
+        

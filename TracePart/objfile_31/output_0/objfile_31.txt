@@ -1,0 +1,22 @@
+
+
+            component_list = {
+    'flexible_coupling_body': {
+        'num': '1',
+        'description': 'A single cylindrical body with a series of helical and straight cut slots along its midsection, forming a flexible structure. The ends of the cylinder are solid and slightly recessed, each with a central bore hole for shaft insertion. There are also threaded holes on the flat faces of both ends, likely for set screws to secure the coupling to shafts. The slotted design allows for torsional flexibility and slight misalignment compensation.'
+    }
+}
+            modify component list:
+            component_list = {
+    'flexible_coupling_body': {
+        'num': '1',
+        'description': 'A single cylindrical body with a series of helical and straight cut slots along its midsection, forming a flexible structure. The ends of the cylinder are solid and slightly recessed, each with a central bore hole for shaft insertion. There are also threaded holes on the flat faces of both ends, likely for set screws to secure the coupling to shafts. The slotted design allows for torsional flexibility and slight misalignment compensation.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['flexible_coupling_body'],
+        'description': 'The flexible_coupling_body is the only component in the model and occupies the entire vertical space. It is a cylindrical structure with helical and straight slots in the midsection, and solid ends with bore and threaded holes for shaft coupling.'
+    }
+}
+        

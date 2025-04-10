@@ -1,0 +1,94 @@
+
+
+            component_list = {
+    'input_shaft_hub': {
+        'num': '1',
+        'description': 'A solid cylindrical component with a central bore and a keyway slot, designed to fit onto a shaft. It has a flat face for flange mounting and bolt holes around the perimeter.'
+    },
+    'output_shaft_hub': {
+        'num': '1',
+        'description': 'A mirror of the input shaft hub, also a solid cylinder with a central bore and keyway slot. It interfaces with the opposite shaft and has bolt holes for flange connection.'
+    },
+    'spacer_ring': {
+        'num': '2',
+        'description': 'Thin, flexible, wavy rings placed between the flange plates. These act as the flexible element in the coupling, allowing for slight misalignment and torque transmission.'
+    },
+    'flange_plate': {
+        'num': '4',
+        'description': 'Flat, circular plates with a central hole and multiple bolt holes around the edge. Two are mounted on each shaft hub, sandwiching the spacer rings.'
+    },
+    'bolt': {
+        'num': '8',
+        'description': 'Slender cylindrical fasteners with hexagonal heads, used to clamp the flange plates together through the bolt holes.'
+    },
+    'nut': {
+        'num': '8',
+        'description': 'Hexagonal components threaded to match the bolts, used to secure the bolts in place and maintain the clamping force on the flanges.'
+    }
+}
+            modify component list:
+            component_list = {
+    'input_shaft_hub': {
+        'num': '1',
+        'description': 'A solid cylindrical component with a central bore and a keyway slot, designed to fit onto a shaft. It has a flat face for flange mounting and bolt holes around the perimeter.'
+    },
+    'output_shaft_hub': {
+        'num': '1',
+        'description': 'A mirror of the input shaft hub, also a solid cylinder with a central bore and keyway slot. It interfaces with the opposite shaft and has bolt holes for flange connection.'
+    },
+    'spacer_ring': {
+        'num': '2',
+        'description': 'Thin, flexible, wavy rings placed between the flange plates. These act as the flexible element in the coupling, allowing for slight misalignment and torque transmission.'
+    },
+    'flange_plate': {
+        'num': '4',
+        'description': 'Flat, circular plates with a central hole and multiple bolt holes around the edge. Two are mounted on each shaft hub, sandwiching the spacer rings.'
+    },
+    'bolt': {
+        'num': '6',
+        'description': 'Slender cylindrical fasteners with hexagonal heads, used to clamp the flange plates together through the bolt holes.'
+    },
+    'nut': {
+        'num': '6',
+        'description': 'Hexagonal components threaded to match the bolts, used to secure the bolts in place and maintain the clamping force on the flanges.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['input_shaft_hub'],
+        'description': 'The input shaft hub is positioned at the far left end of the assembly. It serves as the mounting base for the first two flange plates.'
+    },
+    'layer_2': {
+        'involved_components': ['flange_plate'],
+        'description': 'One flange plate is mounted directly onto the input shaft hub, aligned with its bolt holes.'
+    },
+    'layer_3': {
+        'involved_components': ['spacer_ring'],
+        'description': 'A wavy spacer ring is placed adjacent to the first flange plate, allowing for flexibility and torque transmission.'
+    },
+    'layer_4': {
+        'involved_components': ['flange_plate'],
+        'description': 'A second flange plate is placed after the first spacer ring, forming a sandwich structure.'
+    },
+    'layer_5': {
+        'involved_components': ['flange_plate'],
+        'description': 'A third flange plate is placed next, beginning the mirrored structure for the output side.'
+    },
+    'layer_6': {
+        'involved_components': ['spacer_ring'],
+        'description': 'A second wavy spacer ring is placed between the third and fourth flange plates.'
+    },
+    'layer_7': {
+        'involved_components': ['flange_plate'],
+        'description': 'A fourth flange plate is mounted after the second spacer ring, completing the flange-spacer sandwich.'
+    },
+    'layer_8': {
+        'involved_components': ['output_shaft_hub'],
+        'description': 'The output shaft hub is positioned at the far right end of the assembly, mirroring the input shaft hub.'
+    },
+    'layer_9': {
+        'involved_components': ['bolt', 'nut'],
+        'description': 'Bolts pass through all four flange plates and are secured with nuts to clamp the entire assembly together, ensuring structural integrity and torque transmission.'
+    }
+}
+        

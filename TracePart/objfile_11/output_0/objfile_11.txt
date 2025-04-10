@@ -1,0 +1,42 @@
+
+
+            component_list = {
+    'main_cylindrical_body': {
+        'num': '1',
+        'description': 'A short, thick cylinder with three evenly spaced circumferential grooves around its outer surface. One end has a flat face with a central hole for the shaft, and the other end has a slot cut across the diameter. The body also has two threaded holes on the side for set screws.'
+    },
+    'shaft': {
+        'num': '1',
+        'description': 'A slender cylindrical rod extending from the center of the main body. It is smooth and uniform in diameter, designed to transmit torque or rotational motion.'
+    },
+    'set_screw': {
+        'num': '2',
+        'description': 'Small cylindrical screws inserted into the threaded holes on the side of the main body. They are used to secure the shaft in place and prevent it from rotating or slipping.'
+    }
+}
+            modify component list:
+            component_list = {
+    'main_cylindrical_body': {
+        'num': '1',
+        'description': 'A short, thick cylinder with three evenly spaced circumferential grooves around its outer surface. One end has a flat face with a central hole for the shaft, and the other end has a slot cut across the diameter. The body also has two threaded holes on the side for set screws.'
+    },
+    'shaft': {
+        'num': '1',
+        'description': 'A slender cylindrical rod extending from the center of the main body. It is smooth and uniform in diameter, designed to transmit torque or rotational motion.'
+    },
+    'set_screw': {
+        'num': '2',
+        'description': 'Small cylindrical screws inserted into the threaded holes on the side of the main body. They are used to secure the shaft in place and prevent it from rotating or slipping.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['shaft'],
+        'description': 'The shaft extends from the top center of the main cylindrical body, aligned axially to transmit torque.'
+    },
+    'layer_2': {
+        'involved_components': ['main_cylindrical_body', 'set_screw'],
+        'description': 'The main cylindrical body forms the central structure of the assembly. The set screws are inserted into the threaded side holes of the main body to secure the shaft in place.'
+    }
+}
+        

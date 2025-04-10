@@ -1,0 +1,94 @@
+
+
+            component_list = {
+    'input_shaft_hub': {
+        'num': '1',
+        'description': 'A solid cylindrical hub with a central bore and a side hole for securing to a shaft. It has a flat face for mounting to a flange plate.'
+    },
+    'output_shaft_hub': {
+        'num': '1',
+        'description': 'A similar cylindrical hub as the input hub, with a central bore and a side hole. It interfaces with the opposite flange plate.'
+    },
+    'spacer_ring': {
+        'num': '2',
+        'description': 'Very flat, thin rings placed between the flange plates and the hubs. They provide spacing and alignment.'
+    },
+    'flange_plate': {
+        'num': '2',
+        'description': 'Flat circular plates with bolt holes. Each flange is mounted to a hub and connected to the other via bolts and nuts.'
+    },
+    'bolt': {
+        'num': '4',
+        'description': 'Slender cylindrical fasteners with hexagonal heads, used to connect the two flange plates through the flexible element.'
+    },
+    'nut': {
+        'num': '4',
+        'description': 'Hexagonal nuts paired with bolts to secure the flange plates together.'
+    },
+    'flexible_element': {
+        'num': '1',
+        'description': 'A mesh or grid-like flexible structure sandwiched between the flange plates, allowing for slight misalignment and torque transmission.'
+    }
+}
+            modify component list:
+            component_list = {
+    'input_shaft_hub': {
+        'num': '1',
+        'description': 'A solid cylindrical hub with a central bore and a side hole for securing to a shaft. It has a flat face for mounting to a flange plate.'
+    },
+    'output_shaft_hub': {
+        'num': '1',
+        'description': 'A similar cylindrical hub as the input hub, with a central bore and a side hole. It interfaces with the opposite flange plate.'
+    },
+    'spacer_ring': {
+        'num': '2',
+        'description': 'Very flat, thin rings placed between the flange plates and the hubs. They provide spacing and alignment.'
+    },
+    'flange_plate': {
+        'num': '2',
+        'description': 'Flat circular plates with bolt holes. Each flange is mounted to a hub and connected to the other via bolts and nuts.'
+    },
+    'bolt': {
+        'num': '6',
+        'description': 'Slender cylindrical fasteners with hexagonal heads, used to connect the two flange plates through the flexible element.'
+    },
+    'nut': {
+        'num': '6',
+        'description': 'Hexagonal nuts paired with bolts to secure the flange plates together.'
+    },
+    'flexible_element': {
+        'num': '1',
+        'description': 'A mesh or grid-like flexible structure sandwiched between the flange plates, allowing for slight misalignment and torque transmission.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['input_shaft_hub'],
+        'description': 'The input shaft hub is located at one end of the assembly. It connects directly to one of the flange plates and is secured via a side hole.'
+    },
+    'layer_2': {
+        'involved_components': ['spacer_ring'],
+        'description': 'A spacer ring is placed between the input shaft hub and the adjacent flange plate to ensure proper spacing and alignment.'
+    },
+    'layer_3': {
+        'involved_components': ['flange_plate'],
+        'description': 'This flange plate is mounted to the input shaft hub and interfaces with the flexible element.'
+    },
+    'layer_4': {
+        'involved_components': ['flexible_element', 'bolt', 'nut'],
+        'description': 'The flexible element is sandwiched between the two flange plates. Bolts pass through both flange plates and the flexible element, secured by nuts on the opposite side.'
+    },
+    'layer_5': {
+        'involved_components': ['flange_plate'],
+        'description': 'The second flange plate interfaces with the output shaft hub and is bolted to the first flange plate through the flexible element.'
+    },
+    'layer_6': {
+        'involved_components': ['spacer_ring'],
+        'description': 'Another spacer ring is placed between the second flange plate and the output shaft hub for alignment.'
+    },
+    'layer_7': {
+        'involved_components': ['output_shaft_hub'],
+        'description': 'The output shaft hub is located at the opposite end of the assembly, mirroring the input shaft hub.'
+    }
+}
+        

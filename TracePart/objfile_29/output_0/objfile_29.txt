@@ -1,0 +1,82 @@
+
+
+            component_list = {
+    'left_jaw_block': {
+        'num': '1',
+        'description': 'A rectangular block with a semi-circular groove on the inner face, two bolt holes on the side, and a flat base. It has a vertical slot to accommodate the clamping arms.'
+    },
+    'right_jaw_block': {
+        'num': '1',
+        'description': 'A mirrored counterpart to the left jaw block, also with a semi-circular groove, bolt holes, and a vertical slot. Together with the left block, it forms a cylindrical cavity.'
+    },
+    'central_cylindrical_core': {
+        'num': '1',
+        'description': 'A short, thick cylinder that fits between the jaw blocks. It has a central bore and is partially enclosed by the clamping arms. It serves as the core around which the jaws clamp.'
+    },
+    'upper_clamping_arm': {
+        'num': '1',
+        'description': 'A curved arm with a hook-like end that fits into the vertical slot of the jaw blocks. It has a smooth inner surface to press against the cylindrical core.'
+    },
+    'lower_clamping_arm': {
+        'num': '1',
+        'description': 'Similar to the upper clamping arm but positioned below the core. It mirrors the upper arm and helps secure the core from the bottom.'
+    },
+    'bolt': {
+        'num': '2',
+        'description': 'Slender cylindrical fasteners with hexagonal heads, inserted through the jaw blocks to hold them together. Positioned horizontally.'
+    },
+    'nut': {
+        'num': '2',
+        'description': 'Hexagonal nuts that thread onto the bolts to secure the jaw blocks. Positioned on the opposite side of the bolt heads.'
+    }
+}
+            modify component list:
+            component_list = {
+    'left_jaw_block': {
+        'num': '1',
+        'description': 'A rectangular block with a semi-circular groove on the inner face, two bolt holes on the side, and a flat base. It has a vertical slot to accommodate the clamping arms.'
+    },
+    'right_jaw_block': {
+        'num': '1',
+        'description': 'A mirrored counterpart to the left jaw block, also with a semi-circular groove, bolt holes, and a vertical slot. Together with the left block, it forms a cylindrical cavity.'
+    },
+    'central_cylindrical_core': {
+        'num': '1',
+        'description': 'A short, thick cylinder that fits between the jaw blocks. It has a central bore and is partially enclosed by the clamping arms. It serves as the core around which the jaws clamp.'
+    },
+    'upper_clamping_arm': {
+        'num': '1',
+        'description': 'A curved arm with a hook-like end that fits into the vertical slot of the jaw blocks. It has a smooth inner surface to press against the cylindrical core.'
+    },
+    'lower_clamping_arm': {
+        'num': '1',
+        'description': 'Similar to the upper clamping arm but positioned below the core. It mirrors the upper arm and helps secure the core from the bottom.'
+    },
+    'bolt': {
+        'num': '2',
+        'description': 'Slender cylindrical fasteners with hexagonal heads, inserted through the jaw blocks to hold them together. Positioned horizontally.'
+    },
+    'nut': {
+        'num': '2',
+        'description': 'Hexagonal nuts that thread onto the bolts to secure the jaw blocks. Positioned on the opposite side of the bolt heads.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['upper_clamping_arm'],
+        'description': 'The upper_clamping_arm is positioned at the top of the assembly, curving downward and fitting into the vertical slots of the jaw blocks. It presses down on the central_cylindrical_core.'
+    },
+    'layer_2': {
+        'involved_components': ['left_jaw_block', 'right_jaw_block', 'central_cylindrical_core'],
+        'description': 'The left_jaw_block and right_jaw_block are horizontally aligned and form the main body of the assembly. They enclose the central_cylindrical_core between them, with the semi-circular grooves forming a cylindrical cavity. The core is clamped between the two jaw blocks.'
+    },
+    'layer_3': {
+        'involved_components': ['lower_clamping_arm'],
+        'description': 'The lower_clamping_arm is positioned beneath the central_cylindrical_core, mirroring the upper_clamping_arm. It supports the core from below and fits into the vertical slots of the jaw blocks.'
+    },
+    'layer_4': {
+        'involved_components': ['bolt', 'nut'],
+        'description': 'The bolts pass horizontally through the left and right jaw blocks, securing them together. The nuts are threaded onto the bolts on the opposite side, completing the clamping mechanism.'
+    }
+}
+        

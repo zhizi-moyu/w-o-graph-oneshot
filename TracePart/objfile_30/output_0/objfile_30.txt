@@ -1,0 +1,78 @@
+
+
+            component_list = {
+    'left_end_hub': {
+        'num': '1',
+        'description': 'A short cylindrical hub with a central bore and three bolt holes arranged in a circular pattern on the flange face. It connects to the bellows via a flange ring.'
+    },
+    'right_end_hub': {
+        'num': '1',
+        'description': 'A mirror of the left end hub, also a short cylindrical hub with a central bore and three bolt holes on the flange face. It connects to the opposite end of the bellows.'
+    },
+    'bellows': {
+        'num': '1',
+        'description': 'A flexible, corrugated cylindrical element located between the two hubs. It has multiple concentric ridges and is designed to allow angular and axial flexibility.'
+    },
+    'flange_ring': {
+        'num': '2',
+        'description': 'Flat circular rings mounted on each end of the bellows. Each has three bolt holes aligned with the hubs and serves as the interface between the bellows and the hubs.'
+    },
+    'bolt': {
+        'num': '6',
+        'description': 'Slender cylindrical fasteners with hexagonal heads, used to secure the flange rings to the hubs. Three bolts are used per flange ring.'
+    },
+    'nut': {
+        'num': '6',
+        'description': 'Hexagonal nuts paired with the bolts to fasten the flange rings to the hubs. Positioned on the inner side of the flange rings.'
+    }
+}
+            modify component list:
+            component_list = {
+    'left_end_hub': {
+        'num': '1',
+        'description': 'A short cylindrical hub with a central bore and three bolt holes arranged in a circular pattern on the flange face. It connects to the bellows via a flange ring.'
+    },
+    'right_end_hub': {
+        'num': '1',
+        'description': 'A mirror of the left end hub, also a short cylindrical hub with a central bore and three bolt holes on the flange face. It connects to the opposite end of the bellows.'
+    },
+    'bellows': {
+        'num': '1',
+        'description': 'A flexible, corrugated cylindrical element located between the two hubs. It has multiple concentric ridges and is designed to allow angular and axial flexibility.'
+    },
+    'flange_ring': {
+        'num': '2',
+        'description': 'Flat circular rings mounted on each end of the bellows. Each has three bolt holes aligned with the hubs and serves as the interface between the bellows and the hubs.'
+    },
+    'bolt': {
+        'num': '6',
+        'description': 'Slender cylindrical fasteners with hexagonal heads, used to secure the flange rings to the hubs. Three bolts are used per flange ring.'
+    },
+    'nut': {
+        'num': '6',
+        'description': 'Hexagonal nuts paired with the bolts to fasten the flange rings to the hubs. Positioned on the inner side of the flange rings.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['left_end_hub'],
+        'description': 'The left_end_hub is the outermost component on the left side of the assembly. It interfaces with the flange_ring via bolt holes.'
+    },
+    'layer_2': {
+        'involved_components': ['flange_ring', 'bolt', 'nut'],
+        'description': 'The flange_ring is mounted between the left_end_hub and the bellows. Bolts pass through the flange_ring and are secured with nuts on the inner side.'
+    },
+    'layer_3': {
+        'involved_components': ['bellows'],
+        'description': 'The bellows is the central flexible component, connecting the left and right sides of the assembly. It is clamped between two flange_rings.'
+    },
+    'layer_4': {
+        'involved_components': ['flange_ring', 'bolt', 'nut'],
+        'description': 'The second flange_ring is mounted between the bellows and the right_end_hub. Bolts and nuts secure this connection similarly to the left side.'
+    },
+    'layer_5': {
+        'involved_components': ['right_end_hub'],
+        'description': 'The right_end_hub is the outermost component on the right side of the assembly, mirroring the left_end_hub.'
+    }
+}
+        

@@ -1,0 +1,50 @@
+
+
+            component_list = {
+    'input_shaft_hub': {
+        'num': '1',
+        'description': 'A cylindrical hub with a central bore, external grooves for flexibility, and a flange face with bolt holes. It has a keyway slot and a clamping slit for shaft locking.'
+    },
+    'output_shaft_hub': {
+        'num': '1',
+        'description': 'Identical to the input shaft hub, featuring a cylindrical body with external grooves, a flange face with bolt holes, a keyway slot, and a clamping slit.'
+    },
+    'bellows': {
+        'num': '1',
+        'description': 'A flexible, corrugated cylindrical element that connects the two shaft hubs. It allows for angular and axial misalignment while transmitting torque.'
+    },
+    'flange_ring': {
+        'num': '2',
+        'description': 'Flat circular rings with multiple bolt holes arranged in a circular pattern. These are mounted on the ends of the bellows and connect to the shaft hubs.'
+    },
+    'bolt': {
+        'num': '8',
+        'description': 'Slender cylindrical fasteners with hexagonal heads, used to secure the flange rings to the shaft hubs.'
+    },
+    'nut': {
+        'num': '8',
+        'description': 'Hexagonal nuts that pair with the bolts to fasten the flange rings to the shaft hubs.'
+    }
+}
+            modify component list:
+            component_list = {
+    'input_shaft_hub': {
+        'num': '1',
+        'description': 'A cylindrical hub with a central bore, external grooves for flexibility, and a flange face with bolt holes. It has a keyway slot and a clamping slit for shaft locking.'
+    },
+    'output_shaft_hub': {
+        'num': '1',
+        'description': 'Identical to the input shaft hub, featuring a cylindrical body with external grooves, a flange face with bolt holes, a keyway slot, and a clamping slit.'
+    },
+    'bolt': {
+        'num': '8',
+        'description': 'Slender cylindrical fasteners with hexagonal heads, used to secure the flange areas of the shaft hubs.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['input_shaft_hub', 'output_shaft_hub', 'bolt'],
+        'description': 'The input_shaft_hub and output_shaft_hub are aligned face-to-face at their flanges and connected using bolts. The bolts pass through the flange holes of both hubs, securing them together in the same vertical layer. The cylindrical bodies of the hubs extend outward in opposite directions from the central flange connection.'
+    }
+}
+        

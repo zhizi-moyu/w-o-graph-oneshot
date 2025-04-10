@@ -1,0 +1,38 @@
+
+
+            component_list = {
+    'central_body': {
+        'num': '1',
+        'description': 'A single cylindrical body with a central bulge and multiple helical and straight slots cut into it, forming a flexible shaft coupling. The body has two clamping sections on either end, each with a through-hole for a screw. The slots are precision-machined to allow torsional flexibility while maintaining axial alignment.'
+    },
+    'clamping_screw': {
+        'num': '4',
+        'description': 'Small cylindrical screws with hexagonal sockets, used to tighten the clamping sections of the coupling onto shafts. Two screws are inserted into each end of the central body, passing through threaded holes to secure the shaft in place.'
+    }
+}
+            modify component list:
+            component_list = {
+    'central_body': {
+        'num': '1',
+        'description': 'A single cylindrical body with a central bulge and multiple helical and straight slots cut into it, forming a flexible shaft coupling. The body has two clamping sections on either end, each with a through-hole for a screw. The slots are precision-machined to allow torsional flexibility while maintaining axial alignment.'
+    },
+    'clamping_screw': {
+        'num': '2',
+        'description': 'Small cylindrical screws with hexagonal sockets, used to tighten the clamping sections of the coupling onto shafts. One screw is inserted into each end of the central body, passing through a threaded hole to secure the shaft in place.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['clamping_screw'],
+        'description': 'One clamping screw is located at the top end of the central_body, inserted into the clamping section to secure a shaft.'
+    },
+    'layer_2': {
+        'involved_components': ['central_body'],
+        'description': 'The central_body spans the middle section of the model, featuring a central bulge and helical/straight slots for torsional flexibility. It connects the two clamping sections.'
+    },
+    'layer_3': {
+        'involved_components': ['clamping_screw'],
+        'description': 'The second clamping screw is located at the bottom end of the central_body, inserted into the opposite clamping section to secure another shaft.'
+    }
+}
+        
