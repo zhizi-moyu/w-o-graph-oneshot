@@ -1,4 +1,4 @@
-```scad
+
 $fn = 100; // Smoothness
 
 // Parameters
@@ -80,5 +80,4 @@ module end_cap() {
 
 // Render the full model
 flexible_coupling();
-```
 
