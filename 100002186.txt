@@ -1,0 +1,70 @@
+
+
+            component_list = {
+    'input_shaft': {
+        'num': '1',
+        'description': 'A solid cylindrical shaft with a central bore and a flange at one end. The flange has bolt holes for attachment.'
+    },
+    'output_shaft': {
+        'num': '1',
+        'description': 'A solid cylindrical shaft similar to the input shaft, with a central bore and a flange at one end for bolting.'
+    },
+    'spacer_ring': {
+        'num': '2',
+        'description': 'Very flat, thin rings placed between the flange plates. They are circular with a central hole and bolt holes around the perimeter.'
+    },
+    'flange_plate': {
+        'num': '4',
+        'description': 'Flat, thick circular plates with bolt holes. Two are attached to the input shaft and two to the output shaft, forming a clamping structure.'
+    },
+    'bolt': {
+        'num': '8',
+        'description': 'Slender cylindrical bolts with hexagonal sockets on the head, used to fasten the flange plates together. The head has a recessed hexagonal shape for Allen key insertion.'
+    },
+    'nut': {
+        'num': '8',
+        'description': 'Hexagonal nuts that pair with the bolts to secure the flange plates. They are small and fit into the bolt holes on the opposite side.'
+    },
+    'central_ring': {
+        'num': '1',
+        'description': 'A flexible central ring located between the two sets of flange plates. It allows for slight misalignment and torque transmission. It has a wavy or corrugated profile to provide flexibility.'
+    }
+}
+            modify component list:
+            component_list = {
+    'input_shaft': {
+        'num': '1',
+        'description': 'A solid cylindrical shaft with a central bore and a flange at one end. The flange has bolt holes for attachment.'
+    },
+    'output_shaft': {
+        'num': '1',
+        'description': 'A solid cylindrical shaft similar to the input shaft, with a central bore and a flange at one end for bolting.'
+    },
+    'spacer_ring': {
+        'num': '2',
+        'description': 'Very flat, thin rings placed between the flange plates. They are circular with a central hole and bolt holes around the perimeter.'
+    },
+    'flange_plate': {
+        'num': '4',
+        'description': 'Flat, thick circular plates with bolt holes. Two are attached to the input shaft and two to the output shaft, forming a clamping structure.'
+    },
+    'bolt': {
+        'num': '1',
+        'description': 'Slender cylindrical bolts with hexagonal sockets on the head, used to fasten the flange plates together. The head has a recessed hexagonal shape for Allen key insertion.'
+    },
+    'nut': {
+        'num': '8',
+        'description': 'Hexagonal nuts that pair with the bolts to secure the flange plates. They are small and fit into the bolt holes on the opposite side.'
+    },
+    'central_ring': {
+        'num': '1',
+        'description': 'A flexible central ring located between the two sets of flange plates. It allows for slight misalignment and torque transmission. It has a wavy or corrugated profile to provide flexibility.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['bolt'],
+        'description': 'The bolt is a cylindrical fastener with a hexagonal socket head, likely used to secure flange plates together. It is a standalone component in this context.'
+    }
+}
+        
