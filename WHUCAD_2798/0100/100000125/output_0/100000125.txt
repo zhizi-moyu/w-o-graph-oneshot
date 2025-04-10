@@ -1,0 +1,22 @@
+
+
+            component_list = {
+    'angled_bracket_with_pin': {
+        'num': '1',
+        'description': 'An L-shaped bracket with a vertical and horizontal arm. The vertical arm is a flat rectangular plate extending upward at a right angle. The horizontal arm is a flat elongated base with a cylindrical pin protruding downward near one end. The pin appears to be integrated into the base and is perpendicular to the flat surface. The bracket has a smooth curvature at the joint between the vertical and horizontal arms, providing structural reinforcement. There is also a small raised rectangular feature on the horizontal arm, possibly for alignment or locking purposes.'
+    }
+}
+            modify component list:
+            component_list = {
+    'angled_bracket_with_pin': {
+        'num': '1',
+        'description': 'An L-shaped bracket with a vertical and horizontal arm. The vertical arm is a flat rectangular plate extending upward at a right angle. The horizontal arm is a flat elongated base with a cylindrical pin protruding downward near one end. The pin appears to be integrated into the base and is perpendicular to the flat surface. The bracket has a smooth curvature at the joint between the vertical and horizontal arms, providing structural reinforcement. There is also a small raised rectangular feature on the horizontal arm, possibly for alignment or locking purposes.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['angled_bracket_with_pin'],
+        'description': 'The angled_bracket_with_pin is a standalone L-shaped component. The vertical arm extends upward while the horizontal arm lies flat. A cylindrical pin protrudes downward from the horizontal arm, indicating that this component is likely mounted or inserted into another structure from above. The component occupies the only layer in the model.'
+    }
+}
+        
