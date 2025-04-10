@@ -1,4 +1,4 @@
-```scad
+
 // Parameters
 main_body_diameter = 30;
 main_body_height = 30;
@@ -83,5 +83,5 @@ module set_screw(index) {
 
 // Render the model
 flexible_coupling();
-```
+
 
