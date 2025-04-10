@@ -1,4 +1,4 @@
-```scad
+
 $fn = 100;
 
 // Parameters
@@ -79,5 +79,5 @@ union() {
     set_screw(hub_height/2);
     set_screw(-hub_height - jaw_thickness + hub_height/2);
 }
-```
+
 
