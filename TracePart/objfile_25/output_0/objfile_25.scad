@@ -1,4 +1,4 @@
-```scad
+
 $fn = 100; // Smoothness
 
 // Parameters
@@ -75,5 +75,5 @@ module clamping_screw(z_pos) {
 
 // Render the model
 flexible_coupling();
-```
+
 
