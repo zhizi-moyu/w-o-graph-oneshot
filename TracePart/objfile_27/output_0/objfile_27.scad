@@ -1,4 +1,4 @@
-```scad
+
 // Parameters
 shaft_diameter = 20;
 shaft_length = 40;
@@ -24,5 +24,5 @@ difference() {
                 cylinder(h = side_hole_depth, d = side_hole_diameter, $fn = 60);
     }
 }
-```
+
 
