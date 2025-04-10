@@ -1,4 +1,4 @@
-```scad
+
 // ========== Parameters ==========
 hub_diameter = 30;
 hub_length = 20;
@@ -115,5 +115,5 @@ module full_assembly() {
 
 // ========== Render ==========
 full_assembly();
-```
+
 
