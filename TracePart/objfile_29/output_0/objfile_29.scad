@@ -1,4 +1,4 @@
-```scad
+
 // ========== Parameters ==========
 jaw_width = 20;
 jaw_height = 20;
@@ -117,5 +117,5 @@ module assembly() {
 
 // Call the assembly
 assembly();
-```
+
 
