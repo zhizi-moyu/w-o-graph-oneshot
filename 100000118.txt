@@ -1,0 +1,22 @@
+
+
+            component_list = {
+    'hollow_block': {
+        'num': '1',
+        'description': 'A single solid rectangular block with a square base and a hollowed-out top section. The hollow is shaped like an inverted pyramid or funnel, sloping inward from the top edges toward a central square depression. The outer walls are straight and vertical, while the inner cavity has slanted surfaces forming a geometric funnel. The block has a flat bottom and sharp edges, and the overall shape is symmetric.'
+    }
+}
+            modify component list:
+            component_list = {
+    'hollow_block': {
+        'num': '1',
+        'description': 'A single solid rectangular block with a square base and a hollowed-out top section. The hollow is shaped like an inverted pyramid or funnel, sloping inward from the top edges toward a central square depression. The outer walls are straight and vertical, while the inner cavity has slanted surfaces forming a geometric funnel. The block has a flat bottom and sharp edges, and the overall shape is symmetric.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['hollow_block'],
+        'description': 'The hollow_block is the only component in the model. It sits on a flat surface with its hollowed-out top section exposed. There are no other components above or below it.'
+    }
+}
+        
