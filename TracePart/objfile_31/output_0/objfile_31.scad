@@ -1,4 +1,4 @@
-```scad
+
 $fn = 100; // Smoothness
 
 // Parameters
@@ -47,5 +47,5 @@ module slot_cut() {
 
 // Render the model
 coupling_body();
-```
+
 
