@@ -1,4 +1,4 @@
-```scad
+
 // Parameters
 base_length = 100;
 base_width = 60;
@@ -52,5 +52,4 @@ module assembly() {
 }
 
 assembly();
-```
 
