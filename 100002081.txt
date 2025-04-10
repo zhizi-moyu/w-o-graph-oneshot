@@ -1,0 +1,22 @@
+
+
+            component_list = {
+    'hollowed_block': {
+        'num': '1',
+        'description': 'A solid rectangular cuboid block with four evenly spaced square pyramidal cutouts on the top surface. The block has a flat base and vertical sides. The top face features a 2x2 grid of square holes, each tapering inward to form a square pyramid shape. The cutouts are symmetrical and recessed into the block, giving it a vented or architectural appearance. The overall shape is a clean, geometric cube-like form with precise internal voids.'
+    }
+}
+            modify component list:
+            component_list = {
+    'hollowed_block': {
+        'num': '1',
+        'description': 'A solid rectangular cuboid block with four evenly spaced square pyramidal cutouts on the top surface. The block has a flat base and vertical sides. The top face features a 2x2 grid of square holes, each tapering inward to form a square pyramid shape. The cutouts are symmetrical and recessed into the block, giving it a vented or architectural appearance. The overall shape is a clean, geometric cube-like form with precise internal voids.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['hollowed_block'],
+        'description': 'The hollowed_block is the only component in the model. It forms a single solid cuboid structure with four square pyramidal cutouts on the top surface. There are no other components above or below it.'
+    }
+}
+        
