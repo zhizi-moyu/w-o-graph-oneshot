@@ -1,0 +1,58 @@
+
+
+            component_list = {
+    'tabletop': {
+        'num': '1',
+        'description': 'A flat rectangular panel with smooth edges, serving as the top surface of the table. It has a uniform thickness and appears to be supported at each corner by vertical legs.'
+    },
+    'table_leg': {
+        'num': '4',
+        'description': 'Slender cylindrical rods with uniform diameter, vertically oriented to support the tabletop. Each leg is straight and connects to the corners of the tabletop.'
+    },
+    'side_support_bar': {
+        'num': '2',
+        'description': 'Long horizontal cylindrical rods that connect the left and right pairs of legs along the longer sides of the table. They provide lateral stability.'
+    },
+    'bottom_support_bar': {
+        'num': '2',
+        'description': 'Shorter horizontal cylindrical rods that connect the front and back pairs of legs along the shorter sides of the table. They are positioned lower than the side support bars and enhance structural rigidity.'
+    }
+}
+            modify component list:
+            component_list = {
+    'tabletop': {
+        'num': '1',
+        'description': 'A flat rectangular panel with smooth edges, serving as the top surface of the table. It has a uniform thickness and appears to be supported at each corner by vertical legs.'
+    },
+    'table_leg': {
+        'num': '4',
+        'description': 'Slender cylindrical rods with uniform diameter, vertically oriented to support the tabletop. Each leg is straight and connects to the corners of the tabletop.'
+    },
+    'side_support_bar': {
+        'num': '2',
+        'description': 'Long horizontal cylindrical rods that connect the left and right pairs of legs along the longer sides of the table. They provide lateral stability.'
+    },
+    'bottom_support_bar': {
+        'num': '1',
+        'description': 'Shorter horizontal cylindrical rods that connect the front and back pairs of legs along the shorter sides of the table. They are positioned lower than the side support bars and enhance structural rigidity.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['tabletop'],
+        'description': 'The tabletop is the topmost component, horizontally positioned and supported at each corner by vertical table legs.'
+    },
+    'layer_2': {
+        'involved_components': ['table_leg'],
+        'description': 'The table legs are vertically oriented and connect directly beneath the tabletop at each corner, extending downward to the ground.'
+    },
+    'layer_3': {
+        'involved_components': ['side_support_bar'],
+        'description': 'The side support bars are horizontally aligned and connect the left and right pairs of legs along the longer sides of the table, positioned below the tabletop and above the bottom support bar.'
+    },
+    'layer_4': {
+        'involved_components': ['bottom_support_bar'],
+        'description': 'The bottom support bar is the lowest horizontal component, connecting the front and back pairs of legs along the shorter sides of the table, providing additional structural rigidity.'
+    }
+}
+        
