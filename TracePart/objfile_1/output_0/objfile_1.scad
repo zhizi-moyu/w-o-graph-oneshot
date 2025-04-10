@@ -1,4 +1,4 @@
-```scad
+
 // Parameters
 clamp_diameter = 40;
 clamp_length = 20;
@@ -70,5 +70,5 @@ module coupling_assembly() {
 
 // Render the full assembly
 coupling_assembly();
-```
+
 
