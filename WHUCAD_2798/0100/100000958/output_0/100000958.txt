@@ -1,0 +1,62 @@
+
+
+            component_list = {
+    'slotted_end_shaft': {
+        'num': '2',
+        'description': 'A cylindrical shaft with a wide circular flange at one end and two deep, symmetric slots cut into the shaft body. The flange has a central hole for alignment or fastening.'
+    },
+    'flanged_sleeve': {
+        'num': '2',
+        'description': 'A short, thick-walled cylindrical sleeve with an outward-facing flange at one end. The inner bore is smooth and the outer surface is ribbed. The flange is used for axial positioning.'
+    },
+    'central_spacer_ring': {
+        'num': '1',
+        'description': 'A flat, disk-like ring with a central hole. It is placed between the two flanged sleeves to maintain spacing and alignment.'
+    },
+    'internal_coupling_hub': {
+        'num': '1',
+        'description': 'A cylindrical hub with a recessed center and two opposing curved slots. It fits between the slotted shafts and allows torque transfer through interlocking geometry.'
+    }
+}
+            modify component list:
+            component_list = {
+    'slotted_end_shaft': {
+        'num': '2',
+        'description': 'A cylindrical shaft with a wide circular flange at one end and two deep, symmetric slots cut into the shaft body. The flange has a central hole for alignment or fastening.'
+    },
+    'flanged_sleeve': {
+        'num': '2',
+        'description': 'A short, thick-walled cylindrical sleeve with an outward-facing flange at one end. The inner bore is smooth and the outer surface is ribbed. The flange is used for axial positioning.'
+    },
+    'central_spacer_ring': {
+        'num': '1',
+        'description': 'A flat, disk-like ring with a central hole. It is placed between the two flanged sleeves to maintain spacing and alignment.'
+    },
+    'internal_coupling_hub': {
+        'num': '1',
+        'description': 'A cylindrical hub with a recessed center and two opposing curved slots. It fits between the slotted shafts and allows torque transfer through interlocking geometry.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['slotted_end_shaft'],
+        'description': 'The topmost slotted_end_shaft is positioned with its flange facing outward, ready to interlock with the internal_coupling_hub.'
+    },
+    'layer_2': {
+        'involved_components': ['flanged_sleeve'],
+        'description': 'The first flanged_sleeve is placed directly below the top slotted_end_shaft, providing axial support and alignment.'
+    },
+    'layer_3': {
+        'involved_components': ['central_spacer_ring', 'internal_coupling_hub'],
+        'description': 'The central_spacer_ring and internal_coupling_hub are centrally located between the two flanged_sleeves, allowing torque transfer and maintaining spacing.'
+    },
+    'layer_4': {
+        'involved_components': ['flanged_sleeve'],
+        'description': 'The second flanged_sleeve mirrors the first, placed below the central components to maintain symmetry and alignment.'
+    },
+    'layer_5': {
+        'involved_components': ['slotted_end_shaft'],
+        'description': 'The bottom slotted_end_shaft is oriented similarly to the top one, interlocking with the internal_coupling_hub to complete the assembly.'
+    }
+}
+        
