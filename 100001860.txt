@@ -1,0 +1,50 @@
+
+
+            component_list = {
+    'curved_wedge_block': {
+        'num': '3',
+        'description': 'A solid block with a curved outer surface and a flat inner face, shaped like a quarter of a cylinder segment. The top and bottom faces are flat, and the side faces taper inward, forming a wedge-like profile. The curvature suggests it fits into a circular assembly.'
+    },
+    'flat_wedge_block': {
+        'num': '3',
+        'description': 'A solid block with entirely flat surfaces, shaped like a wedge with a triangular side profile. The front and back faces are flat and angled, and the top and bottom faces are rectangular. It appears to interlock with the curved wedge blocks to form a complete circular structure.'
+    }
+}
+            modify component list:
+            component_list = {
+    'curved_wedge_block': {
+        'num': '3',
+        'description': 'A solid block with a curved outer surface and a flat inner face, shaped like a quarter of a cylinder segment. The top and bottom faces are flat, and the side faces taper inward, forming a wedge-like profile. The curvature suggests it fits into a circular assembly.'
+    },
+    'flat_wedge_block': {
+        'num': '3',
+        'description': 'A solid block with entirely flat surfaces, shaped like a wedge with a triangular side profile. The front and back faces are flat and angled, and the top and bottom faces are rectangular. It appears to interlock with the curved wedge blocks to form a complete circular structure.'
+    }
+}
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['curved_wedge_block'],
+        'description': 'The base of the model starts with a curved_wedge_block, forming the foundation with a curved outer surface.'
+    },
+    'layer_2': {
+        'involved_components': ['flat_wedge_block'],
+        'description': 'A flat_wedge_block is placed directly above the curved_wedge_block, interlocking with its flat face.'
+    },
+    'layer_3': {
+        'involved_components': ['curved_wedge_block'],
+        'description': 'Another curved_wedge_block is stacked above the flat_wedge_block, continuing the circular segment structure.'
+    },
+    'layer_4': {
+        'involved_components': ['flat_wedge_block'],
+        'description': 'A flat_wedge_block is placed above the curved_wedge_block, maintaining the alternating pattern.'
+    },
+    'layer_5': {
+        'involved_components': ['curved_wedge_block'],
+        'description': 'The top layer is a curved_wedge_block, completing the vertical stack with a curved finish.'
+    },
+    'layer_6': {
+        'involved_components': ['flat_wedge_block'],
+        'description': 'A final flat_wedge_block caps the structure, aligning with the previous curved block to complete the circular form.'
+    }
+}
+        
