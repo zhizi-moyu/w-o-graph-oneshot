@@ -1,4 +1,4 @@
-```scad
+
 // Parameters
 fork_arm_length = 40;
 fork_arm_thickness = 5;
@@ -60,5 +60,5 @@ union() {
     translate([0, 0, fork_base_height + 1])  // Slight offset to avoid z-fighting
         pin_head();
 }
-```
+
 
